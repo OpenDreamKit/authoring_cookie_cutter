@@ -9,6 +9,8 @@ RUN sudo pip3 install --upgrade pip
 ADD requirements.txt requirements.txt
 RUN sudo pip3 install -r requirements.txt
 
+RUN pip3 install --user bookbook
+
 RUN sage -pip install jupyterlab
 
 # Copy the contents of the repo in ${HOME}
