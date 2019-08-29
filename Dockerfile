@@ -11,7 +11,8 @@ RUN sudo pip3 install -r requirements.txt
 
 RUN pip3 install --user bookbook
 
-RUN sage -pip install jupyterlab
+# RUN sage -pip install jupyterlab
 
 # Copy the contents of the repo in ${HOME}
-COPY --chown=sage:sage . ${HOME}
+RUN mkdir ${HOME}/notebooks
+COPY --chown=sage:sage . ${HOME}/notebooks
