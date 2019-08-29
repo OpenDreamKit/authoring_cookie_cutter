@@ -1,0 +1,14 @@
+# The required packages are listed here:
+
+nbconvert
+nbformat
+bookbook
+matplotlib
+notebook
+nbval
+numpy
+pandas
+pytest
+
+
+
