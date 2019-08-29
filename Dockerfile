@@ -1,6 +1,6 @@
 FROM sagemath/sagemath:latest
 
-RUN apt-get update -y 
+RUN sudo apt-get update -y 
 # RUN apt-get install -y python3 python3-dev  git pandoc wget python3-pip texlive-xetex texlive-generic-extra
 # RUN pip3 install --upgrade pip
 # RUN pip install bookbook
