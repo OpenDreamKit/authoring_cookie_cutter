@@ -1,14 +1,12 @@
 FROM sagemath/sagemath:latest
 
 RUN sudo apt-get update -y 
-# RUN apt-get install -y python3 python3-dev  git pandoc wget python3-pip texlive-xetex texlive-generic-extra
-# RUN pip3 install --upgrade pip
-# RUN pip install bookbook
+RUN sudo apt-get install -y python3 python3-dev  git pandoc wget python3-pip texlive-xetex texlive-generic-extra
 
-#ADD requirements.txt requirements.txt
-#RUN pip install -r requirements.txt
+ADD requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-# RUN sage -pip install jupyterlab
+RUN sage -pip install jupyterlab
 
 # Copy the contents of the repo in ${HOME}
 COPY --chown=sage:sage . ${HOME}

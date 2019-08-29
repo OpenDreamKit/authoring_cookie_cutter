@@ -77,16 +77,10 @@
 ((* block predoc *))
 
 \title{
-\textbf{\sffamily \huge Authoring }s\\[0.5cm]
+\textbf{\sffamily \huge Authoring }\\[0.5cm]
 \sffamily(with SageMath and Python notebooks )}
 
-\author{
-\centerline{\Oldincludegraphics[width=0.4\textwidth]{images/1.png}}\\[2cm]
-\sffamily Marcin Kostur,\\
-\sffamily Institute of Physics \\
-\sffamily University of Silesia\\
-\sffamily Poland\\[0.3cm]
-}
+\author{James Bond}
 
 \date{ \sffamily \today \\[3cm]
 \sffamily Download Juptyer Notebook files, pdf and html files of this book from\\
