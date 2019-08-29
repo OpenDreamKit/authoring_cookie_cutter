@@ -2,13 +2,13 @@
 
 nbconvert
 nbformat
-bookbook
 matplotlib
 notebook
 nbval
 numpy
 pandas
 pytest
+bookbook
 
 
 
