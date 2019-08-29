@@ -16,3 +16,5 @@ RUN sudo pip3 install -r requirements.txt
 RUN mkdir ${HOME}/notebooks
 COPY --chown=sage:sage . ${HOME}/notebooks
 WORKDIR ${HOME}/notebooks
+ENV PATH="/usr/local/bin/:${PATH}"
+
