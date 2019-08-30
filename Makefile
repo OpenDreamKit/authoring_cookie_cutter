@@ -27,7 +27,8 @@ pdf: $(notebooks_executed)  latex_template.tplx
 
 
 html: $(notebooks_executed)
-	cd notebooks4pdf &&  python3 -m bookbook.html  && mv html ../ -v && cp -r images  ../html/
+	@test -d html && rm -rv html || echo no html dir existed
+	@cd notebooks4pdf &&  python3 -m bookbook.html  && mv html ../ -v && cp -r images  ../html/
 
 clean:
 	@rm -fv combined.*   *log *aux *tex
