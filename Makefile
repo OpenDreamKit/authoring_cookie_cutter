@@ -19,7 +19,7 @@ notebooks4pdf/%.ipynb : %.ipynb
 	@echo Executing notebook  $< and writing it to $@
 	@time PDF=1 jupyter nbconvert  --to notebook --execute  $< --output $@ 
 	@echo Removing tagged cells in excecuted notebook
-	@cd notebooks4pdf &&  jupyter nbconvert  --to notebook  $< --output $< --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags="['nopdf']"   
+	@cd notebooks4pdf &&  jupyter nbconvert  --to notebook  $< --output $< --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags="['nbtest']"   
 
 
 pdf: $(notebooks_executed)  latex_template.tplx 
