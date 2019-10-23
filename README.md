@@ -29,9 +29,9 @@
    - ``make pdf`` - execute notebooks using nbconvert and assemble pdf file using [bookbook](https://github.com/takluyver/bookbook) scripts.
    - ``make html`` - execute notebooks using nbconvert and assemble html version 
    - ``make clear_output`` - removes output from all source files.
-   - ``make clean`` - remove html files and executed notebooks, except pdf-file
+   - ``make clean`` - remove html files and executed notebooks  ``notebooks4pdf/``, except pdf-file
    
-Notebooks are stored ``in notebooks4pdf/`` subfolder, which might be easy for debugging.
+Notebooks after execution are stored in ``notebooks4pdf/`` temporary subfolder, which might be usefull for debugging. Note that the source version of notebooks are in main direcory. 
    
 
 
