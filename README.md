@@ -8,7 +8,7 @@
   pdf/html etc. 
 1. All notebooks which are going to be included in pdf-book have to start with number, e.g.: ``01-*.ipynb``
 1.  ``nbconvert`` is used to automatically execute and clean notebooks.
-1.  It will work with different Jupyter kenrels: we tested against SageMath and Python.
+1.  It will work with different Jupyter kernels: we tested against SageMath and Python.
 1.  Notebook will use ``PDF`` environment variable to distinguish
     between interactive output or static one. In the `Python` process is
     it easily accesible as ``os.environ['PDF']``. This can be
